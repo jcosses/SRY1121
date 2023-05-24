@@ -3,7 +3,13 @@
 print("EJEMPLOS DE CODIGO EN PYTHON")
 print("---------------------------------\n")
 vNom = input("Ingrese su Nombre: ")
-vEdad = int(input("Ingrese su Edad"))
+while True:
+    try:
+        vEdad = int(input("Ingrese su Edad: "))
+        break
+    except:
+        print("Debe ingresar Datos Númericos")
+
 print("==============================")
 print(f"Su Nombre es: {vNom}")
 print(f"Su Edad es: {vEdad}")
